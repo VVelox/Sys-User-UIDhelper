@@ -19,13 +19,13 @@ our $VERSION = '0.1.0';
 
     use Sys::User::UIDhelper;
 
-    #implements it with the default values
+    # invokes it with the default values
     my $foo = Sys::User::UIDhelper->new();
 
-    #sets the min to 2000 and the max to 4000
+    # sets the min to 2000 and the max to 4000
     my $foo = Sys::User::UIDhelper->new(min=>2000, max=>4000);
 
-    #finds the first free one
+    # finds the first free one
     my $first = $foo->firstfree();
     if(defined($first)){
         print $first."\n";
@@ -33,7 +33,7 @@ our $VERSION = '0.1.0';
         print "not found\n";
     }
 
-    #finds the first last one
+    # finds the last free one
     my $last = $foo->lastfree();
     if(defined($last)){
         print $last."\n";
@@ -194,7 +194,7 @@ L<https://metacpan.org/pod/Sys::User::UIDhelper>
 
 =head1 COPYRIGHT & LICENSE
 
-Copyright 2008 Zane C. Bowers, all rights reserved.
+Copyright 2023 Zane C. Bowers-Hadley, all rights reserved.
 
 This program is free software; you can redistribute it and/or modify it
 under the same terms as Perl itself.
